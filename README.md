@@ -1,3 +1,3 @@
-# BCsupport
+# BC support
 
 Collection
