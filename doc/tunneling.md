@@ -1,6 +1,6 @@
-# Some feature
+# Tunneling on Tetralith
 
-## Notebook Tunneling to interactive compute node on Tetralith
+## Notebook on compute node
 
 Start an interactive jobLoad a Python module e.g.:
 
@@ -41,13 +41,3 @@ Then, in a browser, copy paste the equivalent link:
 If you only get a link with node name which the browser fails to connect to, try another Python module
 
 
-Exciting documentation in here.
-Let's make a list (empty surrounding lines required):
-
-- item 1
-
-  - nested item 1
-  - nested item 2
-
-- item 2
-- item 3
