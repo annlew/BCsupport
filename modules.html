@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Modules on Tetralith &#8212; BCsupport 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Conda on Tetralith" href="conda.html" />
+    <link rel="prev" title="Tunneling on Tetralith" href="tunneling.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="modules-on-tetralith">
+<h1>Modules on Tetralith<a class="headerlink" href="#modules-on-tetralith" title="Link to this heading">¶</a></h1>
+<section id="what-is-a-module-and-what-does-it-do">
+<h2>What is a module and what does it do?<a class="headerlink" href="#what-is-a-module-and-what-does-it-do" title="Link to this heading">¶</a></h2>
+<p>Useful module commands:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>module avail
+module load
+module list
+module show
+module purge
+</pre></div>
+</div>
+<p>Module investigation exercise:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>module avail
+module avail netcdf
+module list
+module load buildenv-intel/2018b-eb
+module avail netcdf
+module list
+module load netCDF/4.3.2-HDF5-1.8.12-nsc1-intel-2018.u1-bare
+module show netCDF/4.3.2-HDF5-1.8.12-nsc1-intel-2018.u1-bare
+echo $NETCDF_DIR
+echo $PATH
+echo $PATH | grep netcdf
+module show buildenv-intel/2018b-eb
+</pre></div>
+</div>
+<p>What is netCDF/4.3.2-HDF5-1.8.12-nsc1-intel-2018.u1-bare?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>module show netCDF/4.3.2-HDF5-1.8.12-nsc1-intel-2018.u1-bare 
+vi /software/sse/modules/netCDF/4.3.2-HDF5-1.8.12-nsc1-intel-2018.u1-bare.lua
+ls $NETCDF_DIR
+
+v /software/sse/manual/netcdf/4.7.4/HDF5-1.10.8-nsc1-gcc-7.3.0-bare/build.txt
+
+ls /proj/bolinc/shared/software/apps/
+</pre></div>
+</div>
+<p>Check your environment</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>printenv
+printenv | grep netcdf
+module purge
+printenv
+printenv | grep netcdf
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BCsupport</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tunneling.html">Tunneling on Tetralith</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conda.html">Conda on Tetralith</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="tunneling.html" title="previous chapter">Tunneling on Tetralith</a></li>
+      <li>Next: <a href="conda.html" title="next chapter">Conda on Tetralith</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Anna.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/modules.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
