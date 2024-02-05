@@ -4,7 +4,7 @@
 
 Create an environment:
 
-    module load Anaconda/2022.05-nsc1
+    module load Anaconda/2023.09-0-hpc1
     conda create -n fredagsmys
     conda activate fredagsmys
     python --version

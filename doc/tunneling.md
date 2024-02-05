@@ -2,9 +2,14 @@
 
 ## Notebook on compute node
 
-Start an interactive jobLoad a Python module e.g.:
+Start an interactive job
 
-    module load Python/3.8.3-anaconda-2020.07-extras-nsc1
+    interactive -A naiss2023-1-5 --reservation=lsda -t 01:00:00 -n 1 
+
+Load an Anaconda module and activate an environmant :
+
+    module load Anaconda/2023.09-0-hpc1
+    conda activate
 
 Start a jupyter notebook and specify the node you are working on:
 
