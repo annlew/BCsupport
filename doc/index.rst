@@ -13,4 +13,4 @@ Welcome to BCsupport's documentation!
    tunneling.md
    modules.md
    conda.md
-
+   usage_stats.md
