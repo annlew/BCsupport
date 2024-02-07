@@ -10,8 +10,7 @@ Welcome to BCsupport's documentation!
    :maxdepth: 1
    :caption: Contents:
 
-   tunneling.md
    modules.md
    conda.md
    usage_stats.md
-   notebook_tetralith.md
+   notebooks/notebook_tetralith.md
