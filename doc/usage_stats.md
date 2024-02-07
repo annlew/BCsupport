@@ -18,5 +18,5 @@ Shows how much data you store in each subfolder (depth 1).
 
     du --inodes -hd 1 ./ 
 
-Shows how many files store in each subfolder (depth 1).
+Shows how many files you store in each subfolder (depth 1).
 
