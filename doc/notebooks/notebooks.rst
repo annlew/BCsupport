@@ -1,4 +1,4 @@
-.. _notebooks_tetralith:
+.. _notebooks:
 
 Notebooks on Tetralith
 ====================
