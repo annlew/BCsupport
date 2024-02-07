@@ -15,7 +15,7 @@ Start VSCode on your local machine. You will need the following extensions:
 
 Connect to Tetralith by clicking the button in the lower left corner "Open a Remote Window".
 
-.. image:: remote.png
+.. image:: /images/remote.png
   :width: 600
   :alt: Missing image file
 
