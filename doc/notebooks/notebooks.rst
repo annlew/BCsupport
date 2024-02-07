@@ -8,3 +8,4 @@ Notebooks on Tetralith
 
    notebook_options.md
    tunneling.md
+   vscode.rst
