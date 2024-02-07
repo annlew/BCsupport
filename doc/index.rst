@@ -14,4 +14,4 @@ Welcome to BCsupport's documentation!
    modules.md
    conda.md
    usage_stats.md
-   notebooks.md
+   notebook_tetralith.md
