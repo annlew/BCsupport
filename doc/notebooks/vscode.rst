@@ -19,8 +19,11 @@ Connect to Tetralith by clicking the button in the lower left corner "Open a Rem
   :width: 600
   :alt: Missing image file
 
-In the prompt that will appear at the toop of the window, click on "Connect to Host". If this is the first time you connect to Tetralith through VSCode, choose "Add New SSH Host" 
+In the prompt that will appear at the top of the window, click on "Connect to Host". If this is the first time you connect to Tetralith through VSCode, choose "+ Add New SSH Host" 
 
+.. image:: /images/remote_ssh.png
+  :width: 600
+  :alt: Missing image file
 
 
 

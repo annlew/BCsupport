@@ -14,3 +14,4 @@ Welcome to BCsupport's documentation!
    conda.md
    usage_stats.md
    notebooks/notebooks.rst
+   batchjobs/batchjobs.rst
