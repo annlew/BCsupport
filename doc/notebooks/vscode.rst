@@ -1,6 +1,8 @@
-# VSCode on Tetralith
+ VSCode on Tetralith
+=====================
 
-## Notebook through VSCode
+Notebook through VSCode
++++++++++++++++++++++++
 
 Start VSCode in your local machine. You will need the following extensions:
 
