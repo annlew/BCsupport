@@ -13,4 +13,4 @@ Welcome to BCsupport's documentation!
    modules.md
    conda.md
    usage_stats.md
-   notebooks/notebook_tetralith.md
+   notebooks/notebook_options.rst
