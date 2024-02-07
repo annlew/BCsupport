@@ -6,7 +6,7 @@ There are three often used ways of working with python notebooks on Tetralith, t
 
 Instuctions for settign up an ssh tunnel for notbooks can be found [here](tunneling)
 
-ThinLinc is documented on NSC's web page [https://www.nsc.liu.se/support/graphics/]
+ThinLinc is documented on NSC's web page <https://www.nsc.liu.se/support/graphics/>
 
 Connecting with VSCode
 
