@@ -1,4 +1,6 @@
- VSCode on Tetralith
+.. _vscode:
+
+VSCode on Tetralith
 =====================
 
 Notebook through VSCode
