@@ -16,8 +16,9 @@ If you develop your own codes/scripts or would like to increase the allocated re
 **Can your code make use of more than one node?** Check by first doing short test jobs.
 
 * Does the job finish quicker when more resources are allocated?
-* Does the job make use of all the allocated resources? Use e.g. seff: ::
+* Does the job make use of all the allocated resources? Use e.g. seff:
 
+.. code-block:: text
    $seff job_id_of_test_job
  
    Example output
