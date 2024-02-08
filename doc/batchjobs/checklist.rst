@@ -44,15 +44,41 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
 3. **How does your job scale?** The performance will decrease with increasing number of resources (communication overhead) and there is always a performance-walltime tradeoff. How important is it to have your job finish more quickly? Is the decreased job time worth the extra core hour consumption?
 
-Example scalability test. Blue line shows the walltime for the job depending on the number of cores used. The red line shows ideal scaling. The difference between the blue and red lines represents communication overhead/blocking etc. I would use 32 cores for this job based on the performance test. 
+   Example scalability test. Blue line shows the walltime for the job depending on the number of cores used. The red line shows ideal scaling. The difference between the blue and red lines represents communication overhead/blocking etc. I would use 32 cores for this job based on the performance test. 
 
 .. image:: /images/scale.png
   :width: 600
   :alt: Missing image file
 
-The maximum wall time on Tetralith is 7 days. If your job cannot finish within 7 days, there are workarounds, but these should in general be avoided*. If your jobs need more than seven days of wall time, please ask for help to set up a plan for how to manage your jobs.
+   The maximum wall time on Tetralith is 7 days. If your job cannot finish within 7 days, there are workarounds, but these should in general be avoided*. If your jobs need more than seven days of wall time, please ask for help to set up a plan for how to manage your jobs.
 
 
+
+4. Is your resource usage reasonable? The answer is usually “It depends”. A rule of thumb is: 
+
+  **“Avoid using resources in a way that blocks other users from using them or prevents them from working efficiently”.** 
+
+   What this means depends on the current workload in the project. Please always check the queue status and current usage before submitting a job
+
+
+
+   Check the queue of the project::
+       $ squeue -A snic2022-1-1
+
+   Check the recent usage
+   .. code-block:: text
+       :emphasize-lines: 4, 7
+
+       $ projinfo
+       Principal Investigator (PI):   Qiong Zhang    
+       Slurm account:             	snic2022-1-1   
+       Current core time allocation:  2000000 h/month
+       Consumed compute resource time during the last 30 days:
+
+       Total:                                	2001774.68
+
+
+   Keep checking the queue and core time consumption as your jobs run. 
 
 
 
