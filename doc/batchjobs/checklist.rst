@@ -8,16 +8,16 @@ Checklist
 
 If you develop your own codes/scripts or would like to increase the allocated resources for an existing code, please work through this checklist before submitting your production runs or a large number of jobs.
 
-1. `Is your code/script parallelised?` No -> Use one core: `n 1 not N 1`
+1. **Is your code/script parallelised?** No -> Use one core: **n 1 not N 1**
+
 
 2. If yes -> How is it parallelised?
 
-`Can your code make use of more than one node?` Check by first doing short test jobs.
+**Can your code make use of more than one node?** Check by first doing short test jobs.
 
 * Does the job finish quicker when more resources are allocated?
-* Does the job make use of all the allocated resources? Use e.g. seff
+* Does the job make use of all the allocated resources? Use e.g. seff::
 
-.. code-block::
  $seff job_id_of_test_job
 
  Example output
@@ -39,7 +39,7 @@ What is the difference between the core-walltime and Job Wall-clock time here? T
 Is the code parallelised with MPI, OpenMP or simply running independent processes in parallel? If you are not sure how to allocate the right resources, ask for help.
 
 
-3. `How does your job scale?` The performance will decrease with increasing number of resources (communication overhead) and there is always a performance-walltime tradeoff. How important is it to have your job finish more quickly? Is the decreased job time worth the extra core hour consumption?
+3. **How does your job scale?** The performance will decrease with increasing number of resources (communication overhead) and there is always a performance-walltime tradeoff. How important is it to have your job finish more quickly? Is the decreased job time worth the extra core hour consumption?
 
 Example scalability test. Blue line shows the walltime for the job depending on the number of cores used. The red line shows ideal scaling. The difference between the blue and red lines represents communication overhead/blocking etc. I would use 32 cores for this job based on the performance test. 
 
