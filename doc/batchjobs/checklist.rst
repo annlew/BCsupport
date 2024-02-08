@@ -19,8 +19,9 @@ If you develop your own codes/scripts or would like to increase the allocated re
 * Does the job make use of all the allocated resources? Use e.g. seff:
 
 .. code-block:: text
+
     $seff job_id_of_test_job
-  
+
     Example output
     Job ID: 26294158
     Cluster: tetralith
