@@ -46,9 +46,9 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
    Example scalability test. Blue line shows the walltime for the job depending on the number of cores used. The red line shows ideal scaling. The difference between the blue and red lines represents communication overhead/blocking etc. I would use 32 cores for this job based on the performance test. 
 
-.. image:: /images/scale.png
-  :width: 600
-  :alt: Missing image file
+   .. image:: /images/scale.png
+     :width: 600
+     :alt: Missing image file
 
    The maximum wall time on Tetralith is 7 days. If your job cannot finish within 7 days, there are workarounds, but these should in general **be avoided**[*]. If your jobs need more than seven days of wall time, please ask for help to set up a plan for how to manage your jobs.
 
