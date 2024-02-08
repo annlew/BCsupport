@@ -17,7 +17,7 @@ If you develop your own codes/scripts or would like to increase the allocated re
 * Does the job finish quicker when more resources are allocated?
 * Does the job make use of all the allocated resources? Use e.g. seff
 
-::
+.. code-block::
  $seff job_id_of_test_job
 
  Example output
