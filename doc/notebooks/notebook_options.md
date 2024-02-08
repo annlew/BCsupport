@@ -1,4 +1,4 @@
-# Notebooks connection options
+# Notebook connection options
 
 ## Working with notebooks on Tetralith
 

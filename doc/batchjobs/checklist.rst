@@ -1,10 +1,7 @@
 .. _checklist:
 
-Running jobs on Tetralith
-=====================
-
 Checklist
-+++++++++++++++++++++++
+=====================
 
 If you develop your own codes/scripts or would like to increase the allocated resources for an existing code, please work through this checklist before submitting your production runs or a large number of jobs.
 
@@ -63,7 +60,7 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
    Check the queue of the project::
  
-      $ squeue -A snic2022-1-1
+      $ squeue -A naiss2023-1-5
 
    Check the recent usage
 
@@ -72,7 +69,7 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
        $ projinfo
        Principal Investigator (PI):   Qiong Zhang    
-       Slurm account:             	snic2022-1-1   
+       Slurm account:             	naiss2023-1-5   
        Current core time allocation:  2000000 h/month
        Consumed compute resource time during the last 30 days:
 
