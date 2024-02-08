@@ -18,21 +18,21 @@ If you develop your own codes/scripts or would like to increase the allocated re
 * Does the job make use of all the allocated resources? Use e.g. seff
 
 ::
-$seff job_id_of_test_job
+ $seff job_id_of_test_job
 
-Example output
-Job ID: 26294158
-Cluster: tetralith
-User/Group: x_alewi/x_alewi
-State: COMPLETED (exit code 0)
-Nodes: 4
-Cores per node: 32
-CPU Utilized: 474-08:22:07
-CPU Efficiency: 99.60% of 476-05:58:24 core-walltime
-Job Wall-clock time: 3-17:17:48
-Memory Utilized: 166.25 GB (estimated maximum)
-Memory Efficiency: 0.00% of 0.00 MB (0.00 MB/node)
-::
+ Example output
+ Job ID: 26294158
+ Cluster: tetralith
+ User/Group: x_alewi/x_alewi
+ State: COMPLETED (exit code 0)
+ Nodes: 4
+ Cores per node: 32
+ CPU Utilized: 474-08:22:07
+ CPU Efficiency: 99.60% of 476-05:58:24 core-walltime
+ Job Wall-clock time: 3-17:17:48
+ Memory Utilized: 166.25 GB (estimated maximum)
+ Memory Efficiency: 0.00% of 0.00 MB (0.00 MB/node)
+
 
 What is the difference between the core-walltime and Job Wall-clock time here? The Wall time is how long time it takes for your job to finish, in “real time”. The core-walltime (or total number of core hours used for the job) is the wall time multiplied with the number of allocated cores, i.e. 34*4 times 3 days, 17 hours, 17 minutes and 48 seconds in the example above.
 
