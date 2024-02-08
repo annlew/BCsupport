@@ -25,7 +25,14 @@ Notebook through VSCode
      :width: 600
      :alt: Missing image file
 
-   Enter ssh x_username@tetralith.nsc.liu.se. You will be prompted to updade your SSH configuration file.
+   Enter ssh x_username(at)tetralith.nsc.liu.se. You will be prompted to updade your SSH configuration file.
+ 
 
 4. Go back to step 2 and select tetralith in the drop down menu. Enter your log in credentials.
+
+5. You might need to reinstall/enable Jupyter for remote host. Check the extension manager. 
+
+6. Open a terminal in VSCode (in the "Terminal menu"). Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
+
+7. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
 

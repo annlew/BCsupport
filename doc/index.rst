@@ -11,7 +11,7 @@ Welcome to BCsupport's documentation!
    :caption: Contents:
 
    modules.md
-   conda.md
+   conda.rst
    usage_stats.md
    notebooks/notebooks.rst
    batchjobs/batchjobs.rst
