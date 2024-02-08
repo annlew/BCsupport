@@ -50,7 +50,7 @@ If you develop your own codes/scripts or would like to increase the allocated re
      :width: 600
      :alt: Missing image file
 
-   The maximum wall time on Tetralith is 7 days. If your job cannot finish within 7 days, there are workarounds, but these should in general **be avoided**[*]. If your jobs need more than seven days of wall time, please ask for help to set up a plan for how to manage your jobs.
+   The maximum wall time on Tetralith is 7 days. If your job cannot finish within 7 days, there are workarounds, but these should in general **be avoided** [*]. If your jobs need more than seven days of wall time, please ask for help to set up a plan for how to manage your jobs.
 
 
 
