@@ -56,16 +56,17 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
 4. Is your resource usage reasonable? The answer is usually “It depends”. A rule of thumb is: 
 
-  **“Avoid using resources in a way that blocks other users from using them or prevents them from working efficiently”.** 
-
+   **“Avoid using resources in a way that blocks other users from using them or prevents them from working efficiently”.** 
    What this means depends on the current workload in the project. Please always check the queue status and current usage before submitting a job
 
 
 
    Check the queue of the project::
-       $ squeue -A snic2022-1-1
+ 
+      $ squeue -A snic2022-1-1
 
    Check the recent usage
+
    .. code-block:: text
        :emphasize-lines: 4, 7
 
@@ -81,4 +82,13 @@ If you develop your own codes/scripts or would like to increase the allocated re
    Keep checking the queue and core time consumption as your jobs run. 
 
 
+* Why should workarounds for extending the wall time beyond seven days be avoided? 
+On NSC systems it’s possible to use something called boost-tools to tweak job priorities, wall-time limits and create node reservations. However, these tweaks always come at cost. The project pays with boost-tool tokens that are shared amongst all users within the project. In addition to that, by using boost-tools, you make your colleagues within the same project queue longer than what they would if you hadn’t used the boost-tools.
+
+More specifically, the issue associated with extending the wall time beyond seven days, is that you run a risk of not being able to finish your job, and thus waste the used core hour of a job with a wall time of seven days (and “punish” other project members by wasting core-hours). NSC has a policy to inform about planned downtime of their systems with at least seven days notice. That means that a planned downtime might appear after a job that relies on an extended wall time has been started and the job will not finish. Moreover, since the tokens are available to all project members, you can’t rely on tokens being available when you need to extend the wall time. Someone else might have used up the tokens.
+
+If there is no other solution, wall-time extensions can be used, but should be thought through carefully, and not used routinely.
+
+More information about boost-tools can be found here:
+<https://www.nsc.liu.se/support/batch-jobs/boost-tools/>
 
