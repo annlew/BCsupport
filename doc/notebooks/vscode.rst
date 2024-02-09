@@ -32,7 +32,7 @@ Notebook through VSCode
 
 5. You might need to reinstall/enable Jupyter for remote host. Check the extension manager. 
 
-6. Open a terminal in VSCode (in the "Terminal menu"). Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
+6. Open a terminal in VSCode (in the "Terminal" menu). Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
 
 7. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
 
@@ -44,5 +44,11 @@ Notebook through VSCode
 
    Click on the environement you would like to use.
 
-9. You will now be running your notebook on the Tetralith log in node.
+9. If you don't find your previously installed conda environments you can make VSCode searh specific paths. Open the "Command Palette..." in the "View" menu. Select "Python: Select Interpreter.." and then "Enter interpreter path.." in the drop down menu that appears. Then click "Find..." and enter a path for python in your environment.
+
+   .. image:: /images/kernelpath.png
+     :width: 600
+     :alt: Missing image file
+
+10. You will now be running your notebook on the Tetralith log in node.
 
