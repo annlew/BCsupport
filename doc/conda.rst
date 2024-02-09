@@ -6,6 +6,7 @@ Conda on Tetralith
 Create an environment:
 
 .. code-block:: text
+
     module load Anaconda/2023.09-0-hpc1
     conda create -n fredagsmys
     conda activate fredagsmys
@@ -23,6 +24,7 @@ Create an environment:
 Where are your environments?
  
 .. code-block:: text
+
     cd
     ls -a
     ls -lrt .conda
@@ -34,6 +36,7 @@ Where are your environments?
 Store away your environments
 
 .. code-block:: text
+
     conda env export --name fredagsmys > fredagsmys.yml
     conda env export --from-history --name fredagsmys > small_fredagsmys.yml
     conda env list

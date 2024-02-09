@@ -36,3 +36,13 @@ Notebook through VSCode
 
 7. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
 
+8. Once the notebook is open, you can choose which environment you would like to use. Click on "Select kernel" in the upper right corner
+
+   .. image:: /images/kernel.png
+     :width: 600
+     :alt: Missing image file
+
+   Click on the environement you would like to use.
+
+9. You will now be running your notebook on the Tetralith log in node.
+
