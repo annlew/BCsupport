@@ -6,6 +6,9 @@ VSCode on Tetralith
 Notebook through VSCode
 +++++++++++++++++++++++
 
+Start a Notebook on the log in node
+-----------------------------------
+
 1. Start VSCode on your local machine. You will need the following extensions:
 
 * Jupyter
@@ -32,11 +35,9 @@ Notebook through VSCode
 
 5. You might need to reinstall/enable Jupyter for remote host. Check the extension manager. 
 
-6. Open a terminal in VSCode (in the "Terminal" menu). Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
+6. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
 
-7. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
-
-8. Once the notebook is open, you can choose which environment you would like to use. Click on "Select kernel" in the upper right corner
+7. Once the notebook is open, you can choose which environment you would like to use. Click on "Select kernel" in the upper right corner. If you don't already have a conda environment on Tetralith, you can find instructions :ref:`here <conda>`
 
    .. image:: /images/kernel.png
      :width: 600
@@ -44,11 +45,50 @@ Notebook through VSCode
 
    Click on the environement you would like to use.
 
-9. If you don't find your previously installed conda environments you can make VSCode searh specific paths. Open the "Command Palette..." in the "View" menu. Select "Python: Select Interpreter.." and then "Enter interpreter path.." in the drop down menu that appears. Then click "Find..." and enter a path for python in your environment.
+8. If you don't find your previously installed conda environments you can make VSCode searh specific paths. Open the "Command Palette..." in the "View" menu. Select "Python: Select Interpreter.." and then "Enter interpreter path.." in the drop down menu that appears. Then click "Find..." and enter a path for python in your environment.
 
    .. image:: /images/kernelpath.png
      :width: 600
      :alt: Missing image file
 
-10. You will now be running your notebook on the Tetralith log in node.
+9. You will now be running your notebook on the Tetralith log in node.
+
+
+Start a notebook on a compute node
+----------------------------------
+
+First work through point 1-5 above.
+ 
+6. Start an interactive job in the terminal
+
+.. code-block:: text
+
+   interactive -A naiss2023-1-5 --reservation=lsda -t 01:00:00 -n 1 
+
+7. Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
+
+8. Start a Jupyter server and specify which node you are logged in to, and filter the output.
+
+.. code-block:: text
+
+   jupyter-notebook --no-browser --ip=nXX  >/dev/null 2>&1 &
+
+9. List the notebooks running on the node. It will look something like this:
+
+.. code-block:: text
+
+   $ jupyter notebook list
+   Currently running servers:
+   http://n2:8888/?token=ee5b2a3739b78a8a62371147fe3c06e1466213d787e0da4a :: /home/x_alewi
+
+10. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
+
+
+11. Click on "Select kernel" in the upper right corner and paste the link to the running notebook from step 9 into the drop down window.
+
+   .. image:: /images/node.png
+     :width: 600
+     :alt: Missing image file
+
+12. Your notebook should now be running on a compute node.
 
