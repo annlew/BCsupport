@@ -38,7 +38,7 @@ Only large coherent data sets that need to be stored for a long time and reused 
 
 A data description README file has to be uploaded which describes the data, along with configuration scripts and namelists.
 
-Example
+Example:
 
 .. code-block:: text
 
