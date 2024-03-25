@@ -1,9 +1,9 @@
 .. _about_swestore:
 
-Swestore
+About Swestore
 ====================
 
-Create an environment:
+Swestore documentation can be found on this web page `<https://docs.swestore.se/>`_
 
 .. code-block:: text
 
