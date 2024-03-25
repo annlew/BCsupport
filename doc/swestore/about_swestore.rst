@@ -3,49 +3,66 @@
 About Swestore
 ====================
 
+Documentaion
+++++++++++++++++++++
+
 Swestore documentation can be found on this web page `<https://docs.swestore.se/>`_
 
-.. code-block:: text
 
-    module load Anaconda/2023.09-0-hpc1
-    conda create -n fredagsmys
-    conda activate fredagsmys
-    python --version
-    which python
+Access
++++++++++++++++++++
 
-    conda install python=3.8
-    python --version
-    which python
+All members of the Bolin Centre storage project also have access to the Bolin Centre's Swestore storage. You can find your Swestore username in the `SUPR <https://supr.naiss.account/>`_ portal under "Accounts" in the menu to the left. Here you can also set your Swestore password.
 
-    conda list (-n fredagsmys)  
+Quota
++++++++++++++++++++
 
-    conda deactivate
-
-Where are your environments?
- 
-.. code-block:: text
-
-    cd
-    ls -a
-    ls -lrt .conda
-    du -hd 1 ./
-
-    conda clean --all  
+Our current quota and usage can be found on the SUPR project page for the active storage project.
 
 
-Store away your environments
+What can you store on Swestore?
++++++++++++++++++++++++++++++++
+
+The Bolin Centre Swestore storage is intended for large coherent datasets that, e.g. raw data from climate model simulatios, that needs to be kept, but is not being heavily processed. The data needs to be documented and have an exipry date. Swestore is not a back up service.
+
+Storage policy
++++++++++++++++++++
+
+Only large coherent data sets that need to be stored for a long time and reused should be stored on Swestore. The data should be stored based on model/production method, responsible PI, producer and data set, e.g.:
 
 .. code-block:: text
+    swestore:/snic/bolinc/MODEL/PI/PRODUCER/DATASET
 
-    conda env export --name fredagsmys > fredagsmys.yml
-    conda env export --from-history --name fredagsmys > small_fredagsmys.yml
-    conda env list
+    swestore:/snic/bolinc/NorESM1/AnnicaEkman/x_alewi/7xEU_OC
 
-    conda env remove -n fredagsmys
-    conda env list
+A data description README file has to be uploaded which describes the data, along with configuration scripts and namelists.
 
-    conda env create -n fredagsmys -f fredagsmys.yml
-    conda env list
+Example
+.. code-block:: text
+   Template for mandatory information for data upload on Swestore
+   
+   Generation method, e.g. Model+version
+   
+   Owner/producer including affiliation
+   
+   Project/PI/Secondary owner
+   
+   Expected lifetime, expiry date (latest end of contract)
+   Short description of data
+   
+   Data format, e.g. netCDF, grib
+   
+   Time coverage
+   
+   Time step
+   
+   Plus configuration scripts and namelists with info about input data (BC and IC)
+
+
+
+
+
+    An expiry date for the data set has to be provided, indicating when the data will be deleted or further storage reviewed.
 
    
 
