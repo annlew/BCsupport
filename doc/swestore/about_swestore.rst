@@ -12,7 +12,7 @@ Swestore documentation can be found on this web page `<https://docs.swestore.se/
 Access
 +++++++++++++++++++
 
-All members of the Bolin Centre storage project also have access to the Bolin Centre's Swestore storage. You can find your Swestore username in the `SUPR <https://supr.naiss.account/>`_ portal under "Accounts" in the menu to the left. Here you can also set your Swestore password.
+All members of the Bolin Centre storage project also have access to the Bolin Centre's Swestore storage. You can find your Swestore username in the `SUPR <https://supr.naiss.se/account/>`_ portal under "Accounts" in the menu to the left. Here you can also set your Swestore password.
 
 Quota
 +++++++++++++++++++
@@ -31,6 +31,7 @@ Storage policy
 Only large coherent data sets that need to be stored for a long time and reused should be stored on Swestore. The data should be stored based on model/production method, responsible PI, producer and data set, e.g.:
 
 .. code-block:: text
+
     swestore:/snic/bolinc/MODEL/PI/PRODUCER/DATASET
 
     swestore:/snic/bolinc/NorESM1/AnnicaEkman/x_alewi/7xEU_OC
@@ -38,7 +39,9 @@ Only large coherent data sets that need to be stored for a long time and reused 
 A data description README file has to be uploaded which describes the data, along with configuration scripts and namelists.
 
 Example
+
 .. code-block:: text
+
    Template for mandatory information for data upload on Swestore
    
    Generation method, e.g. Model+version
