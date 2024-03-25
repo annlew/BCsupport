@@ -15,3 +15,4 @@ Welcome to BCsupport's documentation!
    usage_stats.md
    notebooks/notebooks.rst
    batchjobs/batchjobs.rst
+   swestore/swestore.rst
