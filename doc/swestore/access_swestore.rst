@@ -27,17 +27,20 @@ Basic rclone usage
 List directories
 
 .. code-block:: text
+
     rclone lsd swestore:/snic/bolinc
 
 Copy directories to Swestore
 
 .. code-block:: text
+
     rclone copy -P /path/to/src swestore:/snic/bolinc/DESTINATION_DIRECTORY/src
 
 
 Copy directories from Swestore
 
 .. code-block:: text
+
     rclone copy -P swestore:/snic/bolinc/SOURCE_DIRECTORY/src /path/to/src
    
 
