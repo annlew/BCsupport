@@ -29,3 +29,9 @@ Different ways of checking the queue::
     squeue --reservation lsda  -o"%.7i %.9P %.8j %.8u %.2t %.10M %.6D %C %.11l"
     squeue --format="%.18i %.9P %.30j %.8u %.8T %.10M %.9l %.6D %R" --me
 
+
+Change permissions for specific user for a certain folder ::
+
+   setfacl -R -m u:x_user:rx folder/
+
+
