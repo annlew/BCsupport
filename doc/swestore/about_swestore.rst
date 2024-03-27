@@ -9,10 +9,12 @@ Documentaion
 Swestore documentation can be found on this web page `<https://docs.swestore.se/>`_
 
 
+.. _swestore_login:
 Access
 +++++++++++++++++++
 
 All members of the Bolin Centre storage project also have access to the Bolin Centre's Swestore storage. You can find your Swestore username in the `SUPR <https://supr.naiss.se/account/>`_ portal under "Accounts" in the menu to the left. Here you can also set your Swestore password.
+
 
 Quota
 +++++++++++++++++++
@@ -23,7 +25,7 @@ Our current quota and usage can be found on the SUPR project page for the active
 What can you store on Swestore?
 +++++++++++++++++++++++++++++++
 
-The Bolin Centre Swestore storage is intended for large coherent datasets that, e.g. raw data from climate model simulatios, that needs to be kept, but is not being heavily processed. The data needs to be documented and have an exipry date. Swestore is not a back up service.
+The Bolin Centre Swestore storage is intended for large coherent datasets, e.g. raw data from climate model simulations, that needs to be kept, but is not being heavily processed. The data needs to be documented and have an exipry date. **Swestore is not a back up service.**
 
 Storage policy
 +++++++++++++++++++

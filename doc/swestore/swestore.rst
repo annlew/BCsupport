@@ -7,3 +7,4 @@ Swestore
    :maxdepth: 2
 
    about_swestore.rst
+   access_swestore.rst
