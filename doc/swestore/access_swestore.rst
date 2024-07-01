@@ -6,7 +6,7 @@ Working with data on Swestore from Tetralith
 Access methods
 ++++++++++++++++++++
 
-The Swestore `documentation <https://docs.swestore.se/>`_ describes several protocols for acessing data on Swestore. Here is a guide how to work with data on Swestore using rclone from Tetarlith. Rclone is available in log in nodes as well as on compute nodes on tetralith. The full rclone documentation can be found `here https://rclone.org/>`_.
+The Swestore `documentation <https://docs.swestore.se/>`_ describes several protocols for acessing data on Swestore. Here is a guide how to work with data on Swestore using rclone from Tetralith. Rclone is available on log in nodes as well as on compute nodes on Tetralith. The full rclone documentation can be found `here <https://rclone.org/>`_.
 
 
 Browsing data on Swestore
