@@ -60,7 +60,7 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
    Check the queue of the project::
  
-      $ squeue -A naiss2023-1-5
+      $ squeue -A naiss2024-1-3
 
    Check the recent usage
 
@@ -69,7 +69,7 @@ If you develop your own codes/scripts or would like to increase the allocated re
 
        $ projinfo
        Principal Investigator (PI):   Qiong Zhang    
-       Slurm account:             	naiss2023-1-5   
+       Slurm account:             	naiss2024-1-3   
        Current core time allocation:  2000000 h/month
        Consumed compute resource time during the last 30 days:
 

@@ -63,7 +63,7 @@ First work through point 1-5 above.
 
 .. code-block:: text
 
-   interactive -A naiss2023-1-5 --reservation=lsda -t 01:00:00 -n 1 
+   interactive -A naiss2024-1-3 --reservation=lsda -t 01:00:00 -n 1 
 
 7. Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
 
