@@ -30,6 +30,7 @@ Open the file **Makefile** and check what's inside.
 Try to compile:
 
 .. code-block:: text
+
    make
 
 What happened?

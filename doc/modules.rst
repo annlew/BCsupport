@@ -1,8 +1,14 @@
-# Modules on Tetralith
+.. _modules
 
-## What is a module and what does it do?
+Modules on Tetralith
+======================
+
+What is a module and what does it do?
+++++++++++++++++++++++++++++++++++++++++
 
 Useful module commands:
+
+.. code-block:: text
 
     module avail
     module load
@@ -13,6 +19,7 @@ Useful module commands:
 
 Module investigation exercise:
 
+.. code-block:: text
 
     module avail
     module avail netcdf
@@ -29,6 +36,8 @@ Module investigation exercise:
 
 What is netCDF-HDF5/4.9.2-1.12.2-hpc1 
 
+.. code-block:: text
+
     module show netCDF-HDF5/4.9.2-1.12.2-hpc1
     vi /software/sse2/tetralith_el9/supplemental-modules/buildenv-intel/2023a-eb/netCDF-HDF5/4.9.2-1.12.2-hpc1.lua
     ls $NETCDF_DIR
@@ -37,6 +46,8 @@ What is netCDF-HDF5/4.9.2-1.12.2-hpc1
 
 
 Check your environment
+
+.. code-block:: text
 
     printenv
     printenv | grep netcdf
