@@ -47,6 +47,7 @@ Copy directories from Swestore
 Script templates for fetching data from Swestore
 +++++++++++++++++++++++++++++++
 
-Script exaples for processing data on Swestore can be found here
-`<https://github.com/annlew/Swestore-support>`
+Script exaples for processing data on Swestore can be found here:
+
+`<https://github.com/annlew/Swestore-support>`_
 
