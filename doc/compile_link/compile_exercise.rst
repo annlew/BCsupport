@@ -42,7 +42,7 @@ Now, load a build environment and run make again, e.g.:
    module load buildenv-intel/2023a-eb
    make
 
-What is the difference? You might want to check the module investigation exercise :ref:`here <modules>`
+What is the difference? You might want to check the module investigation exercise :ref:`here <modules>`.
 You should now have a working executable. Try to run:
 
 .. code-block:: text
@@ -89,7 +89,7 @@ We need a netCDF library. Check if that is available:
 
    module avail netcdf
 
-Load a netCDF module that is compatible with the compiler that you have chosen. Revise the module `exercise <module>` again.
+Load a netCDF module that is compatible with the compiler that you have chosen. Revise the module :ref: `exercise <modules>` again.
 
 Open **Makefile_nc** and compare to **Makefile_3**. What is different?
 
