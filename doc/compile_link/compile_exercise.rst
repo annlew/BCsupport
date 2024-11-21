@@ -89,7 +89,7 @@ We need a netCDF library. Check if that is available:
 
    module avail netcdf
 
-Load a netCDF module that is compatible with the compiler that you have chosen. Revise the module :ref: `exercise <modules>` again.
+Load a netCDF module that is compatible with the compiler that you have chosen. Revise the module :ref:`exercise <modules>` again.
 
 Open **Makefile_nc** and compare to **Makefile_3**. What is different?
 

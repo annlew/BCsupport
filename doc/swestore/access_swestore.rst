@@ -44,3 +44,9 @@ Copy directories from Swestore
     rclone copy -P swestore:/snic/bolinc/SOURCE_DIRECTORY/src /path/to/src
    
 
+Script templates for fetching data from Swestore
++++++++++++++++++++++++++++++++
+
+Script exaples for processing data on Swestore can be found here
+`<https://github.com/annlew/Swestore-support>`
+
