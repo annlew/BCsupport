@@ -1,4 +1,4 @@
-.. _notebooks:
+.. _compile_link:
 
 Notebooks on Tetralith
 ====================

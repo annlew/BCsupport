@@ -16,3 +16,4 @@ Welcome to BCsupport's documentation!
    notebooks/notebooks.rst
    batchjobs/batchjobs.rst
    swestore/swestore.rst
+   compile_link/compile_link.rst
