@@ -1,6 +1,6 @@
 .. _compile_link:
 
-Notebooks on Tetralith
+Compile and link
 ====================
 
 .. toctree::
