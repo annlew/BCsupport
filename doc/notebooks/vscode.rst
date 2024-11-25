@@ -9,6 +9,8 @@ Notebook through VSCode
 Start a Notebook on the log in node
 -----------------------------------
 
+First of all, make sure you have a conda environment on Tetralith with jypyter installed. Instructions for how to set up a conda environmnet can be found :ref:`here <conda>`. 
+
 1. Start VSCode on your local machine. You will need the following extensions:
 
 * Jupyter
@@ -73,7 +75,7 @@ First work through point 1-5 above.
 
    jupyter-notebook --no-browser --ip=nXX  >/dev/null 2>&1 &
 
-9. List the notebooks running on the node. It will look something like this:
+9. List the notebooks running on the node. It might take a few seconds before the the server is up and running. It will look something like this:
 
 .. code-block:: text
 
@@ -84,7 +86,7 @@ First work through point 1-5 above.
 10. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
 
 
-11. Click on "Select kernel" in the upper right corner and paste the link to the running notebook from step 9 into the drop down window.
+11. Click on "Select kernel" in the upper right corner, then select "Existing Jupyter server" from the drop down menu. Paste the link to the running notebook from step 9 into the drop down menu.
 
    .. image:: /images/node.png
      :width: 600
