@@ -1,6 +1,6 @@
 .. _part3:
 
-CMIP worksop paractiacl part 3
+CMIP workshop part 3
 ===============================
 
 
