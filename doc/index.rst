@@ -17,3 +17,4 @@ Welcome to BCsupport's documentation!
    batchjobs/batchjobs.rst
    swestore/swestore.rst
    compile_link/compile_link.rst
+   CMIPworkshop/CMIPworksop.rst

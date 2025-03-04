@@ -61,13 +61,13 @@ Start a notebook on a compute node
 
 First work through point 1-5 above.
  
-6. Start an interactive job in the terminal
+6. Start an interactive job in the terminal:
 
 .. code-block:: text
 
    interactive -A naiss2024-1-3 --reservation=lsda -t 01:00:00 -n 1 
 
-7. Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`
+7. Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found :ref:`here <conda>`.
 
 8. Start a Jupyter server and specify which node you are logged in to, and filter the output.
 
@@ -84,7 +84,6 @@ First work through point 1-5 above.
    http://n2:8888/?token=ee5b2a3739b78a8a62371147fe3c06e1466213d787e0da4a :: /home/x_alewi
 
 10. Go to "File" and click "New file...". Select Jupyter Notebook from the drop down menu that appears.
-
 
 11. Click on "Select kernel" in the upper right corner, then select "Existing Jupyter server" from the drop down menu. Paste the link to the running notebook from step 9 into the drop down menu.
 
