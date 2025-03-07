@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Working with data on Swestore from Tetralith &#8212; BCsupport 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Compile and link" href="../compile_link/compile_link.html" />
+    <link rel="prev" title="About Swestore" href="about_swestore.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="working-with-data-on-swestore-from-tetralith">
+<span id="access-swestore"></span><h1>Working with data on Swestore from Tetralith<a class="headerlink" href="#working-with-data-on-swestore-from-tetralith" title="Link to this heading">¶</a></h1>
+<section id="access-methods">
+<h2>Access methods<a class="headerlink" href="#access-methods" title="Link to this heading">¶</a></h2>
+<p>The Swestore <a class="reference external" href="https://docs.swestore.se/">documentation</a> describes several protocols for acessing data on Swestore. Here is a guide how to work with data on Swestore using rclone from Tetralith. Rclone is available on log in nodes as well as on compute nodes on Tetralith. The full rclone documentation can be found <a class="reference external" href="https://rclone.org/">here</a>.</p>
+</section>
+<section id="browsing-data-on-swestore">
+<h2>Browsing data on Swestore<a class="headerlink" href="#browsing-data-on-swestore" title="Link to this heading">¶</a></h2>
+<p>It is possible to browse the Swestore storage through a web-page interface: <a class="reference external" href="https://webdav.swestore.se/snic/bolinc/">https://webdav.swestore.se/snic/bolinc/</a>. Data can also be downloaded from this web page. Username and <a class="reference internal" href="about_swestore.html#swestore-login"><span class="std std-ref">password</span></a> is required for access.</p>
+</section>
+<section id="setting-up-rclone-for-swestore">
+<h2>Setting up rclone for Swestore<a class="headerlink" href="#setting-up-rclone-for-swestore" title="Link to this heading">¶</a></h2>
+<p>Instructions for how to configure rclone for Swestore con be found on the Swestore documentation <a class="reference external" href="https://docs.swestore.se/using/rclone/#configuration">page</a>. Certificates are not needed, so follow the instructions for <em>Username/Password</em> authentiction.</p>
+</section>
+<section id="basic-rclone-usage">
+<h2>Basic rclone usage<a class="headerlink" href="#basic-rclone-usage" title="Link to this heading">¶</a></h2>
+<p>List directories</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rclone lsd swestore:/snic/bolinc
+</pre></div>
+</div>
+<p>Copy directories to Swestore</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rclone copy -P /path/to/src swestore:/snic/bolinc/DESTINATION_DIRECTORY/src
+</pre></div>
+</div>
+<p>Copy directories from Swestore</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>rclone copy -P swestore:/snic/bolinc/SOURCE_DIRECTORY/src /path/to/src
+</pre></div>
+</div>
+</section>
+<section id="script-templates-for-fetching-data-from-swestore">
+<h2>Script templates for fetching data from Swestore<a class="headerlink" href="#script-templates-for-fetching-data-from-swestore" title="Link to this heading">¶</a></h2>
+<p>Script exaples for processing data on Swestore can be found here:</p>
+<p><a class="reference external" href="https://github.com/annlew/Swestore-support">https://github.com/annlew/Swestore-support</a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">BCsupport</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage_stats.html">Check usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/notebooks.html">Notebooks on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../batchjobs/batchjobs.html">Running jobs on Tetralith</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="swestore.html">Swestore</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="about_swestore.html">About Swestore</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Working with data on Swestore from Tetralith</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_link/compile_link.html">Compile and link</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CMIPworkshop/CMIPworkshop.html">CMIP workshop</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="swestore.html">Swestore</a><ul>
+      <li>Previous: <a href="about_swestore.html" title="previous chapter">About Swestore</a></li>
+      <li>Next: <a href="../compile_link/compile_link.html" title="next chapter">Compile and link</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2023, Anna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/swestore/access_swestore.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
