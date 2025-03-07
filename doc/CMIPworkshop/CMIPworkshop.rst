@@ -9,4 +9,4 @@ CMIP workshop
    part1.rst
    part2.rst
    part3.rst
-
+   resources.rst
