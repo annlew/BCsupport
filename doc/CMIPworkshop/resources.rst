@@ -21,7 +21,7 @@ Data processing tools for netCDF files
 Quick visualisation tools
 ---------------------------
 
-| ncview - quick look at netCDF files
+| ncview - Quick look at netCDF files
 | https://cirrus.ucsd.edu/ncview/
 
 | Panoply - Quick look at netCDF (and GRIB) files

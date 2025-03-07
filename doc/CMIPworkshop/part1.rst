@@ -28,13 +28,24 @@ CMIP page can be found `here <https://wcrp-cmip.org/>`_
 Finding the data - ESGF
 ----------------
 
-ESGF is `here <https://esgf.llnl.gov/>`_ 
+**Today's task:**
+Find: 
+* monthly mean 
+* near surface teperature for 
+* year 2000 from 
+* historical experiment from 
+* three different models
 
-Today's task: Find monthly mean near surface teperature for year 2000 from historical experiment from three different models
+ESGF is `here <https://esgf.llnl.gov/>`_ 
 
 Together:
 
 Start with NorESM.
+
+
+
+
+
 
 Then, continue with EC-Earth.
 
