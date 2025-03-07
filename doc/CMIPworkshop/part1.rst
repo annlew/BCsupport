@@ -30,15 +30,23 @@ Finding the data - ESGF
 
 ESGF is `here <https://esgf.llnl.gov/>`_ 
 
-Today's task: Find monthly mean near surface teperature for year 2000 from historical experiment from five different models
+Today's task: Find monthly mean near surface teperature for year 2000 from historical experiment from three different models
+
+Together:
 
 Start with NorESM.
 
 Then, continue with EC-Earth.
 
+Your task:
 
+And your model of choice.
 
+Together:
 
+A look at the NetCDF file format
+
+https://clipc-services.ceda.ac.uk/dreq/index.html
 
 
 Questions
