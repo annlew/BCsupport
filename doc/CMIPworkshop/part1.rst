@@ -44,27 +44,27 @@ ESGF is `here <https://esgf.llnl.gov/>`_
 
 * Start with NorESM.
 
-The CMIP6 data request 
-https://clipc-services.ceda.ac.uk/dreq/index.html
+| The CMIP6 data request 
+| https://clipc-services.ceda.ac.uk/dreq/index.html
 
-CMIP global attributes and Controlled Vocabulary (CV)
-https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit?tab=t.0
+| CMIP global attributes and Controlled Vocabulary (CV)
+| https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit?tab=t.0
 
 What is variant label/id, e.g. r1i1p1f1?
 
 * Then, continue with EC-Earth.
 
-https://github.com/annlew/CMIP_workshop.git
+| Some example scripts can be found here:
+| https://github.com/annlew/CMIP_workshop.git
+
+| A look at the NetCDF file format
+
 
 **Your task:**
 
-Your model of choice.
+* Your model of choice. Access montly mean near surface temperature for year 2000 from a historical simulation from a model that is not NorESM or EC-Earth.
 
-Together:
 
-A look at the NetCDF file format
-
-https://clipc-services.ceda.ac.uk/dreq/index.html
 
 
 Questions
