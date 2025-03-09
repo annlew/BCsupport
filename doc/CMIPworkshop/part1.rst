@@ -40,20 +40,25 @@ Find:
 
 ESGF is `here <https://esgf.llnl.gov/>`_ 
 
-Together:
+**Together:**
 
-Start with NorESM.
+* Start with NorESM.
 
+The CMIP6 data request 
+https://clipc-services.ceda.ac.uk/dreq/index.html
 
+CMIP global attributes and Controlled Vocabulary (CV)
+https://docs.google.com/document/d/1h0r8RZr_f3-8egBMMh7aqLwy3snpD6_MrDz1q8n5XUk/edit?tab=t.0
 
+What is variant label/id, e.g. r1i1p1f1?
 
+* Then, continue with EC-Earth.
 
+https://github.com/annlew/CMIP_workshop.git
 
-Then, continue with EC-Earth.
+**Your task:**
 
-Your task:
-
-And your model of choice.
+Your model of choice.
 
 Together:
 
