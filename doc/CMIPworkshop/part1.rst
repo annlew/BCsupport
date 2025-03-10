@@ -18,7 +18,6 @@ Who are we?
 -------------
 Check out the Menti!
 
-Link goes here
 
 Finding information about CMIP
 ----------------
@@ -59,6 +58,8 @@ What is variant label/id, e.g. r1i1p1f1?
 
 | A look at the NetCDF file format
 
+The CF (Climate and Forecast) convention
+https://cfconventions.org/
 
 **Your task:**
 
@@ -67,5 +68,5 @@ What is variant label/id, e.g. r1i1p1f1?
 
 
 
-Questions
+**Questions**
 
