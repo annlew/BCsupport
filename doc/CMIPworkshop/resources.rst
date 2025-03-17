@@ -33,10 +33,13 @@ Installation guide for Mac and Windows
 | Installation instructions for netCDF command line tool and Panoply on Mac and Windows
 | https://pjbartlein.github.io/REarthSysSci/install_netCDF.html
 
+CMIP interactive atlas
+-------------------------
+https://interactive-atlas.ipcc.ch/
 
-
-
-
+CMIP errata
+----------------
+https://errata.ipsl.fr/static/index.html
 
 
 
