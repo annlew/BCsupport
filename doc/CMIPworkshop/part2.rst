@@ -2,11 +2,12 @@
 
 CMIP workshop part 2
 ===============================
-here is a pdf file :download:`pdf <doc/klaus.pdf>`
 
-   .. image:: images/klaus.pdf
-     :width: 600
-     :alt: Missing image file
+Presentation
+++++++++++++
+
+Slides from the presentation can be downloaded :download:`here <doc/klaus.pdf>`.
+
 
 
 Practical part
