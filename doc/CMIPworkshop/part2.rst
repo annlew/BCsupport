@@ -3,7 +3,9 @@
 CMIP workshop part 2
 ===============================
 
-.. image:: images/klaus.pdf
+   .. image:: images/klaus.pdf
+     :width: 600
+     :alt: Missing image file
 
 
 Practical part
