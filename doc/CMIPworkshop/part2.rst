@@ -2,6 +2,7 @@
 
 CMIP workshop part 2
 ===============================
+here is a pdf file :download:`pdf <images/klaus.pdf>`
 
    .. image:: images/klaus.pdf
      :width: 600
