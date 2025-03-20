@@ -3,7 +3,7 @@
 CMIP workshop part 2
 ===============================
 
-:download:A Detailed Example images/klaus.pdf
+.. image:: images/klaus.pdf
 
 
 Practical part
