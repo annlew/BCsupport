@@ -3,6 +3,9 @@
 CMIP workshop part 2
 ===============================
 
+:download:A Detailed Example </home/anna/work/workshop/CMIP/resources/cmip_webinar_part_2.pdf>
+
+
 Practical part
 ++++++++++++
 
