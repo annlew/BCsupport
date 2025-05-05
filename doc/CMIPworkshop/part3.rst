@@ -25,5 +25,9 @@ Exploring CMIP data
 
 * **Based on the presentation today**, pick a variable relavant for your work and download from three different models and compare.
 
+
+| AerChemMip Table
+| https://osf.io/2bpzu
+
 **Questions**
 
