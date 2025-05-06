@@ -3,6 +3,14 @@
 CMIP workshop part 3
 ===============================
 
+
+Presentation
+++++++++++++
+
+Slides from the presentation can be downloaded :download:`here <doc/CMIP_wilcox.pdf>`.
+
+
+
 Practical part
 ++++++++++++
 
