@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CMIP workshop part 2 &#8212; BCsupport 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CMIP workshop part 3" href="part3.html" />
+    <link rel="prev" title="CMIP workshop part 1" href="part1.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cmip-workshop-part-2">
+<span id="part2"></span><h1>CMIP workshop part 2<a class="headerlink" href="#cmip-workshop-part-2" title="Link to this heading">¶</a></h1>
+<section id="presentation">
+<h2>Presentation<a class="headerlink" href="#presentation" title="Link to this heading">¶</a></h2>
+<p>Slides from the presentation can be downloaded <a class="reference download internal" download="" href="../_downloads/8943524ea703df8bd5501cd94d6fdbd5/klaus.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+</section>
+<section id="practical-part">
+<h2>Practical part<a class="headerlink" href="#practical-part" title="Link to this heading">¶</a></h2>
+<p>Outline</p>
+<ul class="simple">
+<li><p>Recap of part 1</p></li>
+<li><p>Which type of data access makes sense for your data processing?</p></li>
+<li><p>CMOR post-processing and QA</p></li>
+</ul>
+<section id="working-with-cmip-data-other-ways-of-access-than-esgf-web-portal">
+<h3>Working with CMIP data - other ways of access than ESGF web portal<a class="headerlink" href="#working-with-cmip-data-other-ways-of-access-than-esgf-web-portal" title="Link to this heading">¶</a></h3>
+<p><strong>Server-side data storage</strong></p>
+<div class="line-block">
+<div class="line">IS-ENES (ended in 2023 but great portal)</div>
+<div class="line"><a class="reference external" href="https://is.enes.org/">https://is.enes.org/</a></div>
+</div>
+<div class="line-block">
+<div class="line">SMHI (Bolin Centre) data library</div>
+<div class="line">Available on Tetralith but requires permission</div>
+</div>
+<p><strong>Large scale data download and synchronisation with ESGF</strong></p>
+<div class="line-block">
+<div class="line">ESGpull</div>
+<div class="line"><a class="reference external" href="https://esgf.github.io/esgf-download/">https://esgf.github.io/esgf-download/</a></div>
+</div>
+</section>
+<section id="data-format-cmor-and-cmorisation">
+<h3>Data format - CMOR and CMORisation<a class="headerlink" href="#data-format-cmor-and-cmorisation" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">CMOR - Climate Model Output Rewriter</div>
+<div class="line"><a class="reference external" href="https://cmor.llnl.gov/">https://cmor.llnl.gov/</a></div>
+</div>
+<div class="line-block">
+<div class="line">CMOR tables</div>
+<div class="line"><a class="reference external" href="https://github.com/PCMDI/cmip6-cmor-tables/tree/main">https://github.com/PCMDI/cmip6-cmor-tables/tree/main</a></div>
+</div>
+<div class="line-block">
+<div class="line">Conversion table from native model variable to CMOR format - NorESM example</div>
+<div class="line"><a class="reference external" href="https://github.com/NorESMhub/noresm2cmor/blob/master/namelists/CMIP6_NorESM2-LM/historical/template/var.nml">https://github.com/NorESMhub/noresm2cmor/blob/master/namelists/CMIP6_NorESM2-LM/historical/template/var.nml</a></div>
+</div>
+</section>
+<section id="exploring-cmip-data">
+<h3>Exploring CMIP data<a class="headerlink" href="#exploring-cmip-data" title="Link to this heading">¶</a></h3>
+<p><strong>Your task</strong></p>
+<ul class="simple">
+<li><p>Find monthly mean precipitation flux for SSP2-4.5 from NorESM2-LM</p></li>
+<li><p>How many members are there?</p></li>
+<li><p>What is the model resolution of the atmosphere component?</p></li>
+<li><p>Available variants?</p></li>
+<li><p>Available dataset version(s) for say r1i1p1f1?</p></li>
+<li><p>On which server are the data located? Are there any replicas anywhere?</p></li>
+<li><p>How many files are in r1i1p1f1?</p></li>
+<li><p>Download the r1i1p1f1 dataset</p></li>
+<li><p>Inspect metadata in one of the netCDF files with ncdump</p></li>
+<li><p>Look at the data with ncview</p></li>
+<li><p>Load data in jupyter notebook/python/other plotting tool and make plots (maps and timeseries)</p></li>
+</ul>
+<p><strong>Questions</strong></p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">BCsupport</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage_stats.html">Check usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/notebooks.html">Notebooks on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../batchjobs/batchjobs.html">Running jobs on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../swestore/swestore.html">Swestore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_link/compile_link.html">Compile and link</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="CMIPworkshop.html">CMIP workshop</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="part1.html">CMIP workshop part 1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CMIP workshop part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="part3.html">CMIP workshop part 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html">Resources</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="CMIPworkshop.html">CMIP workshop</a><ul>
+      <li>Previous: <a href="part1.html" title="previous chapter">CMIP workshop part 1</a></li>
+      <li>Next: <a href="part3.html" title="next chapter">CMIP workshop part 3</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2023, Anna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/CMIPworkshop/part2.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
