@@ -3,6 +3,14 @@
 CMIP workshop part 1
 ===============================
 
+Presentation
+++++++++++++
+
+Slides from the presentation can be downloaded :download:`here <doc/CMIP_Thorsten.pdf>`.
+
+
+
+
 Practical part
 ++++++++++++
 
