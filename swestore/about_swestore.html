@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About Swestore &#8212; BCsupport 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Working with data on Swestore from Tetralith" href="access_swestore.html" />
+    <link rel="prev" title="Swestore" href="swestore.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="about-swestore">
+<span id="id1"></span><h1>About Swestore<a class="headerlink" href="#about-swestore" title="Link to this heading">¶</a></h1>
+<section id="documentaion">
+<h2>Documentaion<a class="headerlink" href="#documentaion" title="Link to this heading">¶</a></h2>
+<p>Swestore documentation can be found on this web page <a class="reference external" href="https://docs.swestore.se/">https://docs.swestore.se/</a></p>
+</section>
+<section id="access">
+<span id="swestore-login"></span><h2>Access<a class="headerlink" href="#access" title="Link to this heading">¶</a></h2>
+<p>All members of the Bolin Centre storage project also have access to the Bolin Centre’s Swestore storage. You can find your Swestore username in the <a class="reference external" href="https://supr.naiss.se/account/">SUPR</a> portal under “Accounts” in the menu to the left. Here you can also set your Swestore password.</p>
+</section>
+<section id="quota">
+<h2>Quota<a class="headerlink" href="#quota" title="Link to this heading">¶</a></h2>
+<p>Our current quota and usage can be found on the SUPR project page for the active storage project.</p>
+</section>
+<section id="what-can-you-store-on-swestore">
+<h2>What can you store on Swestore?<a class="headerlink" href="#what-can-you-store-on-swestore" title="Link to this heading">¶</a></h2>
+<p>The Bolin Centre Swestore storage is intended for large coherent datasets, e.g. raw data from climate model simulations, that needs to be kept, but is not being heavily processed. The data needs to be documented and have an exipry date. <strong>Swestore is not a back up service.</strong></p>
+</section>
+<section id="storage-policy">
+<h2>Storage policy<a class="headerlink" href="#storage-policy" title="Link to this heading">¶</a></h2>
+<p>Only large coherent data sets that need to be stored for a long time and reused should be stored on Swestore. The data should be stored based on model/production method, responsible PI, producer and data set, e.g.:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>swestore:/snic/bolinc/MODEL/PI/PRODUCER/DATASET
+
+swestore:/snic/bolinc/NorESM1/AnnicaEkman/x_alewi/7xEU_OC
+</pre></div>
+</div>
+<p>A data description README file has to be uploaded which describes the data, along with configuration scripts and namelists.</p>
+<p>Example:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Template for mandatory information for data upload on Swestore
+
+Generation method, e.g. Model+version
+
+Owner/producer including affiliation
+
+Project/PI/Secondary owner
+
+Expected lifetime, expiry date (latest end of contract)
+Short description of data
+
+Data format, e.g. netCDF, grib
+
+Time coverage
+
+Time step
+
+Plus configuration scripts and namelists with info about input data (BC and IC)
+
+
+
+
+
+ An expiry date for the data set has to be provided, indicating when the data will be deleted or further storage reviewed.
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">BCsupport</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage_stats.html">Check usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/notebooks.html">Notebooks on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../batchjobs/batchjobs.html">Running jobs on Tetralith</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="swestore.html">Swestore</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">About Swestore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="access_swestore.html">Working with data on Swestore from Tetralith</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_link/compile_link.html">Compile and link</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CMIPworkshop/CMIPworkshop.html">CMIP workshop</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="swestore.html">Swestore</a><ul>
+      <li>Previous: <a href="swestore.html" title="previous chapter">Swestore</a></li>
+      <li>Next: <a href="access_swestore.html" title="next chapter">Working with data on Swestore from Tetralith</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2023, Anna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/swestore/about_swestore.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

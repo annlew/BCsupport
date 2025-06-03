@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>VSCode on Tetralith &#8212; BCsupport 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Running jobs on Tetralith" href="../batchjobs/batchjobs.html" />
+    <link rel="prev" title="Tunneling on Tetralith" href="tunneling.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="vscode-on-tetralith">
+<span id="vscode"></span><h1>VSCode on Tetralith<a class="headerlink" href="#vscode-on-tetralith" title="Link to this heading">¶</a></h1>
+<section id="notebook-through-vscode">
+<h2>Notebook through VSCode<a class="headerlink" href="#notebook-through-vscode" title="Link to this heading">¶</a></h2>
+<section id="start-a-notebook-on-the-log-in-node">
+<h3>Start a Notebook on the log in node<a class="headerlink" href="#start-a-notebook-on-the-log-in-node" title="Link to this heading">¶</a></h3>
+<p>First of all, make sure you have a conda environment on Tetralith with jypyter installed. Instructions for how to set up a conda environmnet can be found <a class="reference internal" href="../conda.html#conda"><span class="std std-ref">here</span></a>.</p>
+<ol class="arabic simple">
+<li><p>Start VSCode on your local machine. You will need the following extensions:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Jupyter</p></li>
+<li><p>Remote - SSH</p></li>
+<li><p>Remote Explorer</p></li>
+<li><p>Python</p></li>
+</ul>
+<ol class="arabic" start="2">
+<li><p>Connect to Tetralith by clicking the button in the lower left corner “Open a Remote Window”.</p>
+<a class="reference internal image-reference" href="../_images/remote.png"><img alt="Missing image file" src="../_images/remote.png" style="width: 600px;" />
+</a>
+</li>
+<li><p>In the prompt that will appear at the top of the window, click on “Connect to Host”. If this is the first time you connect to Tetralith through VSCode, choose “+ Add New SSH Host”</p>
+<a class="reference internal image-reference" href="../_images/remote_ssh.png"><img alt="Missing image file" src="../_images/remote_ssh.png" style="width: 600px;" />
+</a>
+<p>Enter ssh x_username(at)tetralith.nsc.liu.se. You will be prompted to updade your SSH configuration file.</p>
+</li>
+<li><p>Go back to step 2 and select tetralith in the drop down menu. Enter your log in credentials.</p></li>
+<li><p>You might need to reinstall/enable Jupyter for remote host. Check the extension manager.</p></li>
+<li><p>Go to “File” and click “New file…”. Select Jupyter Notebook from the drop down menu that appears.</p></li>
+<li><p>Once the notebook is open, you can choose which environment you would like to use. Click on “Select kernel” in the upper right corner. If you don’t already have a conda environment on Tetralith, you can find instructions <a class="reference internal" href="../conda.html#conda"><span class="std std-ref">here</span></a></p>
+<a class="reference internal image-reference" href="../_images/kernel.png"><img alt="Missing image file" src="../_images/kernel.png" style="width: 600px;" />
+</a>
+<p>Click on the environement you would like to use.</p>
+</li>
+<li><p>If you don’t find your previously installed conda environments you can make VSCode searh specific paths. Open the “Command Palette…” in the “View” menu. Select “Python: Select Interpreter..” and then “Enter interpreter path..” in the drop down menu that appears. Then click “Find…” and enter a path for python in your environment.</p>
+<a class="reference internal image-reference" href="../_images/kernelpath.png"><img alt="Missing image file" src="../_images/kernelpath.png" style="width: 600px;" />
+</a>
+</li>
+<li><p>You will now be running your notebook on the Tetralith log in node.</p></li>
+</ol>
+</section>
+<section id="start-a-notebook-on-a-compute-node">
+<h3>Start a notebook on a compute node<a class="headerlink" href="#start-a-notebook-on-a-compute-node" title="Link to this heading">¶</a></h3>
+<p>First work through point 1-5 above.</p>
+<ol class="arabic simple" start="6">
+<li><p>Start an interactive job in the terminal:</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>interactive -A naiss2024-1-3 --reservation=lsda -t 01:00:00 -n 1
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Load an Anaconda module and activate an environment. Instructions for how to work with conda environments on Tetralith can be found <a class="reference internal" href="../conda.html#conda"><span class="std std-ref">here</span></a>.</p></li>
+<li><p>Start a Jupyter server and specify which node you are logged in to, and filter the output.</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>jupyter-notebook --no-browser --ip=nXX  &gt;/dev/null 2&gt;&amp;1 &amp;
+</pre></div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>List the notebooks running on the node. It might take a few seconds before the the server is up and running. It will look something like this:</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ jupyter notebook list
+Currently running servers:
+http://n2:8888/?token=ee5b2a3739b78a8a62371147fe3c06e1466213d787e0da4a :: /home/x_alewi
+</pre></div>
+</div>
+<ol class="arabic simple" start="10">
+<li><p>Go to “File” and click “New file…”. Select Jupyter Notebook from the drop down menu that appears.</p></li>
+<li><p>Click on “Select kernel” in the upper right corner, then select “Existing Jupyter server” from the drop down menu. Paste the link to the running notebook from step 9 into the drop down menu.</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/node.png"><img alt="Missing image file" src="../_images/node.png" style="width: 600px;" />
+</a>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p>Your notebook should now be running on a compute node.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">BCsupport</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage_stats.html">Check usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="notebooks.html">Notebooks on Tetralith</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="notebook_options.html">Notebook connection options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tunneling.html">Tunneling on Tetralith</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">VSCode on Tetralith</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../batchjobs/batchjobs.html">Running jobs on Tetralith</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../swestore/swestore.html">Swestore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compile_link/compile_link.html">Compile and link</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CMIPworkshop/CMIPworkshop.html">CMIP workshop</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="notebooks.html">Notebooks on Tetralith</a><ul>
+      <li>Previous: <a href="tunneling.html" title="previous chapter">Tunneling on Tetralith</a></li>
+      <li>Next: <a href="../batchjobs/batchjobs.html" title="next chapter">Running jobs on Tetralith</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2023, Anna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/notebooks/vscode.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
