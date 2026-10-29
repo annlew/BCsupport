@@ -18,4 +18,4 @@ Welcome to BCsupport's documentation!
    swestore/swestore.rst
    compile_link/compile_link.rst
    CMIPworkshop/CMIPworkshop.rst
-   CodesArr.rst
+   CodesArr/CodesArr.rst
