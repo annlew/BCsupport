@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>BC support &#8212; BCsupport 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="bc-support">
+<h1>BC support<a class="headerlink" href="#bc-support" title="Permalink to this headline">¶</a></h1>
+<section id="notebook-tunneling-to-interactive-compute-node-on-tetralith">
+<h2>Notebook Tunneling to interactive compute node on Tetralith<a class="headerlink" href="#notebook-tunneling-to-interactive-compute-node-on-tetralith" title="Permalink to this headline">¶</a></h2>
+<p>Start an interactive jobLoad a Python module e.g.:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>module load Python/3.8.3-anaconda-2020.07-extras-nsc1
+</pre></div>
+</div>
+<p>Start a jupyter notebook and specify the node you are working on:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>jupyter-notebook --no-browser --ip=nXX
+</pre></div>
+</div>
+<p>example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[x_alewi@n19 ~]$ jupyter-notebook --no-browser --ip=n19
+</pre></div>
+</div>
+<p>You will get something like:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[I 11:13:55.182 NotebookApp] The Jupyter Notebook is running at:
+[I 11:13:55.182 NotebookApp] http://n19:8888/?token=58a74ec25157356a51e655bca3c47069396d211ebbe2d9e3
+
+To access the notebook, open this file in a browser:
+
+file:///home/x_alewi/.local/share/jupyter/runtime/nbserver-243891-open.html
+
+Or copy and paste one of these URLs:
+
+    http://n19:8888/?token=58a74ec25157356a51e655bca3c47069396d211ebbe2d9e3
+ or http://127.0.0.1:8888/?token=58a74ec25157356a51e655bca3c47069396d211ebbe2d9e3
+</pre></div>
+</div>
+<p>Note the node name (n19) and the port, in this example: 8888</p>
+<p>In another terminal, make an ssh tunnel log in, note the node name and port:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh -N -L localhost:8888:n19:8888 x_user@tetralith.nsc.liu.se
+</pre></div>
+</div>
+<p>Then, in a browser, copy paste the equivalent link:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>http://127.0.0.1:8888/?token=58a74ec25157356a51e655bca3c47069396d211ebbe2d9e3
+</pre></div>
+</div>
+<p>If you only get a link with node name which the browser fails to connect to, try another Python module</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BCsupport</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="some-feature.html">Some feature</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Anna.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/README.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
